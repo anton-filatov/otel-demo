@@ -15,6 +15,7 @@ subprojects {
         def springBootVersion = '3.3.2'
         implementation platform("org.springframework.boot:spring-boot-dependencies:$springBootVersion")
         annotationProcessor platform("org.springframework.boot:spring-boot-dependencies:$springBootVersion")
+        implementation platform('io.opentelemetry:opentelemetry-bom:1.41.0')
 
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
